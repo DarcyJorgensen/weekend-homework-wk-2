@@ -1,0 +1,99 @@
+<!-- Build a whack-a-mole game:
+   - Have a grid of divs / containers on your page. 
+   They should all be the same size and be at least a 5x5 grid although you can add more if you would like
+   - Have a start button that the user can click to start the game
+   - When the game starts, show a timer for X amount of seconds. 
+   X can be any value you would like but should be no more than 30 seconds.
+
+   - Every second or every random amount of time, have one of the divs light up by adding a class to it. 
+
+   After a reasonable (your call) amount of time remove the color change to that div and have it revert to normal.
+   - If a user clicks one of the divs while it is lit up, a score counter at the top should increment by one.
+   
+   - After the timer ends, the cycle should stop and the user should see their score and have 
+   the ability to start a new game. Starting a new game should reset the score and start over.
+   - If you would like / have time add the ability to choose a difficulty when the user starts the game. -->
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>whack-a-mole</title>
+       <link rel="stylesheet" href="Whack.css">
+
+   </head>
+
+   <h1>Whack-A-Mole</h1>
+
+   <body>
+       <div class="flex">
+        <main>
+            <div class="moleHole" id="hole1"></div> 
+            <div class="moleHole" id="hole2"></div>
+            <div class="moleHole" id="hole3"></div>
+            <div class="moleHole" id="hole4"></div>
+            <div class="moleHole" id="hole5"></div>
+            <div class="moleHole" id="hole6"></div>
+            <div class="moleHole" id="hole7"></div>
+            <div class="moleHole" id="hole8"></div>
+            <div class="moleHole" id="hole9"></div>
+            <div class="moleHole" id="hole10"></div>
+            <div class="moleHole" id="hole11"></div>
+            <div class="moleHole" id="hole12"></div>
+            <div class="moleHole" id="hole13"></div>
+            <div class="moleHole" id="hole14"></div>
+            <div class="moleHole" id="hole15"></div>
+            <div class="moleHole" id="hole16"></div>
+            <div class="moleHole" id="hole17"></div>
+            <div class="moleHole" id="hole18"></div>
+            <div class="moleHole" id="hole19"></div>
+            <div class="moleHole" id="hole20"></div>
+            <div class="moleHole" id="hole21"></div>
+            <div class="moleHole" id="hole22"></div>
+            <div class="moleHole" id="hole23"></div>
+            <div class="moleHole" id="hole24"></div>
+            <div class="moleHole" id="hole25"></div>
+        </main>   
+
+        <aside>
+            <div class="buttonStart">
+            <button id="startGame">Start Game</button>
+            </div>
+
+            <div class="buttonStart">
+            <div>Time Remaining: 
+                <br/>
+                <span id="timer"> 10
+
+                </span> Seconds
+            </div>
+            </div>
+
+            <div class="buttonStart">
+            <div>Score: 
+                <span id="score"> 0
+
+                </span> Moles Whacked
+            </div>
+            </div>
+
+            <!-- <div class="image-size flex">
+                <img
+                    src="mole.png";
+                    title="mole";
+                    alt="mole";
+                    id="mole";
+                    style="display:block";/>
+            </div> -->
+
+        </aside>
+    
+    </div>
+    
+    <script src="whack.js"></script>
+
+
+   </body>
+   </html>
